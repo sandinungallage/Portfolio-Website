@@ -1504,10 +1504,16 @@ body.dark-theme .php-email-form input, body.dark-theme .php-email-form textarea 
   border-color: #444 !important;
 }
 
-body.dark-theme .portfolio-info, body.dark-theme .service-item, body.dark-theme .resume-item, body.dark-theme .info-item, body.dark-theme .testimonial-item {
+body.dark-theme .portfolio-info, body.dark-theme .service-item {
   background-color: #1e1e1e !important;
   border-color: #333 !important;
   box-shadow: 0px 5px 20px rgba(0, 0, 0, 0.5) !important;
+}
+
+body.dark-theme .info-item, body.dark-theme .testimonial-item {
+  background-color: #1e1e1e !important;
+  border-color: #333 !important;
+  box-shadow: none !important;
 }
 
 body.dark-theme .portfolio-info p {
