@@ -1559,3 +1559,8 @@ body.dark-theme #footer p,
 body.dark-theme #footer .copyright {
   color: #e0e0e0 !important;
 }
+body.dark-theme .contact .php-email-form input[type=text],
+body.dark-theme .contact .php-email-form input[type=email],
+body.dark-theme .contact .php-email-form textarea {
+  background-color: transparent !important;
+}
