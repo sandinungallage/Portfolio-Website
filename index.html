@@ -34,6 +34,11 @@
 
 <body class="index-page">
 
+  <!-- Dark Mode Toggle -->
+  <button id="darkModeToggle" class="btn btn-dark position-fixed top-0 end-0 m-3" style="z-index: 9999; border-radius: 50%; width: 45px; height: 45px; display: flex; align-items: center; justify-content: center; box-shadow: 0px 4px 10px rgba(0,0,0,0.3); transition: all 0.3s ease;">
+    <i class="bi bi-moon-fill" style="transform: translateY(1px);"></i>
+  </button>
+
   <header id="header" class="header d-flex flex-column justify-content-center">
 
     <i class="header-toggle d-xl-none bi bi-list"></i>
@@ -1093,6 +1098,42 @@
 
   <!-- Main JS File -->
   <script src="assets/js/main.js"></script>
+
+  <!-- Dark Mode Logic -->
+  <script>
+    document.addEventListener('DOMContentLoaded', () => {
+      const darkModeToggle = document.getElementById('darkModeToggle');
+      const icon = darkModeToggle.querySelector('i');
+      const body = document.body;
+      
+      const setDarkMode = (isDark) => {
+        if (isDark) {
+          body.classList.add('dark-theme');
+          icon.classList.remove('bi-moon-fill');
+          icon.classList.add('bi-sun-fill');
+          darkModeToggle.classList.remove('btn-dark');
+          darkModeToggle.classList.add('btn-light');
+          localStorage.setItem('theme', 'dark');
+        } else {
+          body.classList.remove('dark-theme');
+          icon.classList.remove('bi-sun-fill');
+          icon.classList.add('bi-moon-fill');
+          darkModeToggle.classList.remove('btn-light');
+          darkModeToggle.classList.add('btn-dark');
+          localStorage.setItem('theme', 'light');
+        }
+      };
+
+      // Check saved preference
+      if (localStorage.getItem('theme') === 'dark') {
+        setDarkMode(true);
+      }
+
+      darkModeToggle.addEventListener('click', () => {
+        setDarkMode(!body.classList.contains('dark-theme'));
+      });
+    });
+  </script>
 
 </body>
 
