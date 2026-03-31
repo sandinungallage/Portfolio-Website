@@ -12,36 +12,47 @@
 --------------------------------------------------------------*/
 /* Fonts */
 :root {
-  --default-font: "Roboto",  system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
-  --heading-font: "Raleway",  sans-serif;
-  --nav-font: "Poppins",  sans-serif;
+  --default-font: "Roboto", system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  --heading-font: "Raleway", sans-serif;
+  --nav-font: "Poppins", sans-serif;
 }
 
 /* Global Colors - The following color variables are used throughout the website. Updating them here will change the color scheme of the entire website */
-:root { 
-  --background-color: #ffffff; /* Background color for the entire website, including individual sections */
-  --default-color: #272829; /* Default color used for the majority of the text content across the entire website */
-  --heading-color: #45505b; /* Color for headings, subheadings and title throughout the website */
-  --accent-color: #0563bb; /* Accent color that represents your brand on the website. It's used for buttons, links, and other elements that need to stand out */
-  --surface-color: #ffffff; /* The surface color is used as a background of boxed elements within sections, such as cards, icon boxes, or other elements that require a visual separation from the global background. */
-  --contrast-color: #ffffff; /* Contrast color for text, ensuring readability against backgrounds of accent, heading, or default colors. */
+:root {
+  --background-color: #ffffff;
+  /* Background color for the entire website, including individual sections */
+  --default-color: #272829;
+  /* Default color used for the majority of the text content across the entire website */
+  --heading-color: #45505b;
+  /* Color for headings, subheadings and title throughout the website */
+  --accent-color: #0563bb;
+  /* Accent color that represents your brand on the website. It's used for buttons, links, and other elements that need to stand out */
+  --surface-color: #ffffff;
+  /* The surface color is used as a background of boxed elements within sections, such as cards, icon boxes, or other elements that require a visual separation from the global background. */
+  --contrast-color: #ffffff;
+  /* Contrast color for text, ensuring readability against backgrounds of accent, heading, or default colors. */
 }
 
 /* Nav Menu Colors - The following color variables are used specifically for the navigation menu. They are separate from the global colors to allow for more customization options */
 :root {
-  --nav-color: #45505b;  /* The default color of the main navmenu links */
-  --nav-hover-color: #0563bb; /* Applied to main navmenu links when they are hovered over or active */
-  --nav-mobile-background-color: #ffffff; /* Used as the background color for mobile navigation menu */
-  --nav-dropdown-background-color: #ffffff; /* Used as the background color for dropdown items that appear when hovering over primary navigation items */
-  --nav-dropdown-color: #212529; /* Used for navigation links of the dropdown items in the navigation menu. */
-  --nav-dropdown-hover-color: #0563bb; /* Similar to --nav-hover-color, this color is applied to dropdown navigation links when they are hovered over. */
+  --nav-color: #45505b;
+  /* The default color of the main navmenu links */
+  --nav-hover-color: #0563bb;
+  /* Applied to main navmenu links when they are hovered over or active */
+  --nav-mobile-background-color: #ffffff;
+  /* Used as the background color for mobile navigation menu */
+  --nav-dropdown-background-color: #ffffff;
+  /* Used as the background color for dropdown items that appear when hovering over primary navigation items */
+  --nav-dropdown-color: #212529;
+  /* Used for navigation links of the dropdown items in the navigation menu. */
+  --nav-dropdown-hover-color: #0563bb;
+  /* Similar to --nav-hover-color, this color is applied to dropdown navigation links when they are hovered over. */
 }
 
 /* Color Presets - These classes override global colors when applied to any section or element, providing reuse of the sam color scheme. */
 
 .light-background {
   --background-color: #f9f9f9;
-  --surface-color: #ffffff;
 }
 
 .dark-background {
@@ -537,7 +548,6 @@ section,
 
 .hero:before {
   content: "";
-  background: color-mix(in srgb, var(--background-color), transparent 60%);
   position: absolute;
   inset: 0;
   z-index: 2;
@@ -1461,7 +1471,9 @@ section,
 /*--------------------------------------------------------------
 # Dark Theme Overrides
 --------------------------------------------------------------*/
-body.dark-theme, body.dark-theme .light-background, body.dark-theme .section {
+body.dark-theme,
+body.dark-theme .light-background,
+body.dark-theme .section {
   --background-color: #121212 !important;
   --default-color: #e0e0e0 !important;
   --heading-color: #ffffff !important;
@@ -1469,11 +1481,16 @@ body.dark-theme, body.dark-theme .light-background, body.dark-theme .section {
   --contrast-color: #121212 !important;
 }
 
-body.dark-theme .navmenu a, body.dark-theme .navmenu a i, body.dark-theme .navmenu a span {
+body.dark-theme .navmenu a,
+body.dark-theme .navmenu a i,
+body.dark-theme .navmenu a span {
   color: #e0e0e0 !important;
 }
 
-body.dark-theme .navmenu a:hover, body.dark-theme .navmenu a:hover i, body.dark-theme .navmenu .active, body.dark-theme .navmenu .active i {
+body.dark-theme .navmenu a:hover,
+body.dark-theme .navmenu a:hover i,
+body.dark-theme .navmenu .active,
+body.dark-theme .navmenu .active i {
   color: var(--accent-color) !important;
 }
 
@@ -1492,25 +1509,29 @@ body.dark-theme .navmenu a:hover, body.dark-theme .navmenu a:hover i, body.dark-
 }
 
 @media (min-width: 992px) {
+
   body.dark-theme .navmenu a,
   body.dark-theme .navmenu a:focus {
     background-color: #2c2c2c !important;
   }
 }
 
-body.dark-theme .php-email-form input, body.dark-theme .php-email-form textarea {
+body.dark-theme .php-email-form input,
+body.dark-theme .php-email-form textarea {
   background-color: #2c2c2c !important;
   color: #fff !important;
   border-color: #444 !important;
 }
 
-body.dark-theme .portfolio-info, body.dark-theme .service-item {
+body.dark-theme .portfolio-info,
+body.dark-theme .service-item {
   background-color: #1e1e1e !important;
   border-color: #333 !important;
   box-shadow: 0px 5px 20px rgba(0, 0, 0, 0.5) !important;
 }
 
-body.dark-theme .info-item, body.dark-theme .php-email-form {
+body.dark-theme .info-item,
+body.dark-theme .php-email-form {
   background-color: #1e1e1e !important;
   border-color: #333 !important;
   box-shadow: none !important;
@@ -1520,7 +1541,8 @@ body.dark-theme .portfolio-info p {
   color: #e0e0e0 !important;
 }
 
-body.dark-theme .portfolio-info h4, body.dark-theme .resume-item h4 {
+body.dark-theme .portfolio-info h4,
+body.dark-theme .resume-item h4 {
   color: var(--accent-color) !important;
 }
 
@@ -1533,6 +1555,7 @@ body.dark-theme #footer .sitename {
   color: #ffffff !important;
 }
 
-body.dark-theme #footer p, body.dark-theme #footer .copyright {
+body.dark-theme #footer p,
+body.dark-theme #footer .copyright {
   color: #e0e0e0 !important;
 }
