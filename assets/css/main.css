@@ -22,7 +22,7 @@
   --background-color: #f8fafc;
   --default-color: #334155;
   --heading-color: #0f172a;
-  --accent-color: #0dcaf0;
+  --accent-color: #3b82f6;
   --surface-color: #ffffff;
   --contrast-color: #ffffff;
 }
@@ -30,11 +30,11 @@
 /* Nav Menu Colors */
 :root {
   --nav-color: #475569;
-  --nav-hover-color: #0dcaf0;
+  --nav-hover-color: #3b82f6;
   --nav-mobile-background-color: #ffffff;
   --nav-dropdown-background-color: #ffffff;
   --nav-dropdown-color: #1e293b;
-  --nav-dropdown-hover-color: #0dcaf0;
+  --nav-dropdown-hover-color: #3b82f6;
 }
 
 /* Color Presets */
@@ -164,16 +164,16 @@ h6 {
 
 @media (min-width: 1200px) {
   .header~main {
-    margin-left: 300px;
-    margin-right: 100px;
+    margin-left: 150px;
+    margin-right: 150px;
   }
 
   .header~main .hero {
-    margin-left: -300px;
-    margin-right: -100px;
-    width: calc(100% + 400px);
-    padding-left: 300px;
-    padding-right: 100px;
+    margin-left: -150px;
+    margin-right: -150px;
+    width: calc(100% + 300px);
+    padding-left: 150px;
+    padding-right: 150px;
   }
 }
 
@@ -916,7 +916,7 @@ section,
 }
 
 .services .service-item.item-cyan i {
-  color: #0dcaf0;
+  color: #3b82f6;
 }
 
 .services .service-item.item-cyan:hover .icon i {
@@ -924,7 +924,7 @@ section,
 }
 
 .services .service-item.item-cyan:hover .icon path {
-  fill: #0dcaf0;
+  fill: #3b82f6;
 }
 
 .services .service-item.item-orange i {
@@ -1524,7 +1524,7 @@ body.dark-theme .portfolio-info:hover,
 body.dark-theme .service-item:hover {
   transform: translateY(-8px) scale(1.02) !important;
   border-color: var(--accent-color) !important;
-  box-shadow: 0 15px 35px rgba(13, 202, 240, 0.2) !important;
+  box-shadow: 0 15px 35px rgba(59, 130, 246, 0.2) !important;
 }
 
 body.dark-theme .info-item,
@@ -1570,13 +1570,13 @@ body.dark-theme #footer .copyright {
 
 .service-item:hover, .portfolio-item:hover .portfolio-info {
   transform: translateY(-8px);
-  box-shadow: 0 12px 30px rgba(13, 202, 240, 0.15);
+  box-shadow: 0 12px 30px rgba(59, 130, 246, 0.15);
 }
 
 /* Progress Bar Overrides */
 .skills .progress-bar {
-  background: linear-gradient(90deg, #0dcaf0, #0072ff);
-  box-shadow: 0 0 10px rgba(13, 202, 240, 0.5);
+  background: linear-gradient(90deg, #3b82f6, #6366f1);
+  box-shadow: 0 0 10px rgba(59, 130, 246, 0.5);
   border-radius: 5px;
 }
 .skills .progress-bar-wrap {
@@ -1586,13 +1586,13 @@ body.dark-theme #footer .copyright {
 
 /* Hero Section Gradient Typed Text */
 .hero .typed-cursor, .hero .typed {
-  background: linear-gradient(90deg, #0dcaf0, #0072ff);
+  background: linear-gradient(90deg, #3b82f6, #6366f1);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   font-weight: 700;
 }
 .hero .typed-cursor {
-  -webkit-text-fill-color: #0dcaf0;
+  -webkit-text-fill-color: #3b82f6;
 }
 
 /* Button Micro-Animations */
@@ -1601,11 +1601,11 @@ body.dark-theme #footer .copyright {
 }
 .btn-primary:hover {
   transform: scale(1.05);
-  box-shadow: 0 0 15px rgba(13, 202, 240, 0.6);
+  box-shadow: 0 0 15px rgba(59, 130, 246, 0.6);
 }
 .btn-outline-light:hover {
   transform: scale(1.05);
   background-color: var(--accent-color);
   border-color: var(--accent-color);
-  box-shadow: 0 0 15px rgba(13, 202, 240, 0.4);
+  box-shadow: 0 0 15px rgba(59, 130, 246, 0.4);
 }
